@@ -172,7 +172,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
         <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
       </label>
     </div>
@@ -257,44 +257,13 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
             <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
           </label>
         </div>
         <article role="main" id="furo-main-content">
           <section id="install">
 <h1>Install<a class="headerlink" href="#install" title="Link to this heading">¶</a></h1>
-<section id="install-sumo-latest-version">
-<h2>Install SUMO latest version:<a class="headerlink" href="#install-sumo-latest-version" title="Link to this heading">¶</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>add-apt-repository<span class="w"> </span>ppa:sumo/stable
-sudo<span class="w"> </span>apt-get<span class="w"> </span>update
-sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>sumo<span class="w"> </span>sumo-tools<span class="w"> </span>sumo-doc
-</pre></div>
-</div>
-<p>Don’t forget to set SUMO_HOME variable (default sumo installation path is /usr/share/sumo)</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;export SUMO_HOME=&quot;/usr/share/sumo&quot;&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.bashrc
-<span class="nb">source</span><span class="w"> </span>~/.bashrc
-</pre></div>
-</div>
-<p>Important: for a huge performance boost (~8x) with Libsumo, you can declare the variable:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">LIBSUMO_AS_TRACI</span><span class="o">=</span><span class="m">1</span>
-</pre></div>
-</div>
-<p>Notice that you will not be able to run with sumo-gui or with multiple simulations in parallel if this is active (<a class="reference external" href="https://sumo.dlr.de/docs/Libsumo.html">more details</a>).</p>
-</section>
-<section id="install-sumo-rl">
-<h2>Install SUMO-RL<a class="headerlink" href="#install-sumo-rl" title="Link to this heading">¶</a></h2>
-<p>Stable release version is available through pip</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>sumo-rl
-</pre></div>
-</div>
-<p>Alternatively, you can install using the latest (unreleased) version</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/LucasAlegre/sumo-rl
-<span class="nb">cd</span><span class="w"> </span>sumo-rl
-pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
-</pre></div>
-</div>
-</section>
 </section>
 
         </article>
@@ -340,28 +309,8 @@ pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </s
         
       </footer>
     </div>
-    <aside class="toc-drawer">
+    <aside class="toc-drawer no-toc">
       
-      
-      <div class="toc-sticky toc-scroll">
-        <div class="toc-title-container">
-          <span class="toc-title">
-            On this page
-          </span>
-        </div>
-        <div class="toc-tree-container">
-          <div class="toc-tree">
-            <ul>
-<li><a class="reference internal" href="#">Install</a><ul>
-<li><a class="reference internal" href="#install-sumo-latest-version">Install SUMO latest version:</a></li>
-<li><a class="reference internal" href="#install-sumo-rl">Install SUMO-RL</a></li>
-</ul>
-</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
       
       
     </aside>
